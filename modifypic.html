@@ -11,6 +11,10 @@
 <!--引入Jq-->
 <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
+<script type="text/javascript" src='js/swfupload/swfupload.js'></script>
+<script type="text/javascript" src='js/swfupload/swfupload.cookies.js'></script>
+
 <!--[if IE 6]>
 <script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
 <script type="text/javascript">
@@ -19,6 +23,60 @@ window.onload = function(){
 }
 </script>
 <![endif]-->
+
+<script type="text/javascript" >
+$(function(){
+		
+		var swfu;
+		
+		var uploadCompleteFun = function(){
+		};
+		
+		var uploadSuccessFun = function(option, result,status){
+		};
+		
+	 var settings_object = {//定义参数配置对象
+		upload_url : "",
+		flash_url : "js/swfupload/swfupload.swf",
+		button_placeholder_id: 'upload-btn',
+		button_width : 84,
+		button_height : 22,
+		button_text:'上传图片',
+		button_text_top_padding: 4,
+		button_text_left_padding: 18,
+		button_text_style: '.btn-style{color:#ED5C00;}',
+		button_cursor : SWFUpload.CURSOR.HAND,
+		button_window_mode : SWFUpload.WINDOW_MODE.TRANSPARENT,
+		//button_image_url: '/tpl/www/image/ucbutton.png',
+		file_types : "*.jpg;*.gif;*.png;*.bmp;",
+		upload_success_handler : uploadSuccessFun,
+		upload_complete_handler : uploadCompleteFun,
+		upload_error_handler: function(){
+			
+		},
+		upload_progress_handler: function(fileInfo, uploadSize, fileSize){
+		},
+		
+		file_dialog_start_handler: function(){
+			
+		},
+		
+		file_dialog_complete_handler: function(){
+			swfu.startUpload();
+		},
+		file_queue_error_handler: function(option, codeError, errmsg){
+			if(codeError == -130){
+				alert('文件类型不支持');
+			}
+		}
+	};
+		
+	swfu = new SWFUpload(settings_object);//实例化一个SWFUpload，传入参数配置对象
+	
+});
+
+</script>
+
 </head>
 
 <body>
@@ -131,7 +189,7 @@ window.onload = function(){
                                 <form action="" method="">
                                     <p class="title">设置新头像</p>
                                     <p class="tips">支持jpg、gif、gif或bmp格式。</p>
-                                    <p class="btn">选择图片</p>
+                                    <p class="btn"><button id="upload-btn">选择图片</button></p>
                                     <div class="preview">
                                         <img src="images/defaultPic.png" width="96" height="96"/>
                                     </div>
