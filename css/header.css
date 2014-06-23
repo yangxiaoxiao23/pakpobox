@@ -29,7 +29,7 @@ html {background:#f3f3f3;}
 
 /* 头部样式 */
 .header .title {}
-.header .title h1 {height:75px;line-height:75px;}
+.header .title h1 {height:75px;line-height:75px;overflow:hidden;}
 .header .title h1 a {font-size:18px;font-family:'微软雅黑';font-weight:bold;color:#00a6b7;text-decoration:none;}
 
 .header .pos {margin:18px 0 0 0px;height:48px;line-height:48px;}

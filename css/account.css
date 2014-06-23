@@ -101,11 +101,12 @@ border-right:1px solid #dddddd;border-bottom:1px solid #c5c5c5;border-left:1px s
 #addressitems table tbody tr {border:1px solid #a2cbff;}
 #addressitems table tbody tr td a {color:#404040;text-decoration:none;}
 #addressitems table tbody tr td a:hover {color:#fc6210;text-decoration:none;}
-#addressitems table tbody tr:hover {background:#c6d9f0;}
-#addressitems table tbody tr:hover .default {display:inline;cursor:pointer;}
-#addressitems table tbody tr.default-addr:hover .default {display:none;}
 #addressitems table tbody tr.default-addr {background:#c6d9f0;}
 #addressitems table tbody .default {display:none;color:#0000ff;}
 #addressitems table tbody tr.default-addr .default {display:inline;cursor:pointer;}
+#addressitems table tbody tr:hover {background:#c6d9f0;}
+#addressitems table tbody tr:hover .default {display:inline;cursor:pointer;}
+
+
 
 #addressitems p.more-address {font:12px/2 '宋体'; color:#404040;}
