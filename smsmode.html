@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>派宝箱PakpoBox</title>
+<link type="text/css" rel="stylesheet" href="css/public_reset.css">
+<link type="text/css" rel="stylesheet" href="css/header.css">
+<link type="text/css" rel="stylesheet" href="css/footer.css">
+<link type="text/css" rel="stylesheet" href="css/account.css">
+
+<!--引入Jq-->
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+	DD_belatedPNG.fix(".pngFix,.pngFix:hover");
+}
+</script>
+<![endif]-->
+</head>
+
+<body>
+<div class="toolbar">
+	<div class="toolbar-bd clear">
+		<div class="welcome">欢迎使用派宝箱！</div>	
+    	<ul class="toolbar-bd-con clear">
+        	<li class="toolbar-item">你好，苍老师</li>
+            <li class="toolbar-item mypakpo">
+            	<div class="mypakpo-bd">
+                	<a href="#">我的派宝箱</a>
+                </div>    
+                <dl class="mypakpo-dl">
+                	<dd class="mypakpo-dd"><a href="#">充值1</a></dd>
+                    <dd class="mypakpo-dd"><a href="#">充值2</a></dd>
+                    <dd class="mypakpo-dd"><a href="#">充值3</a></dd>
+                </dl>
+            </li>
+            <li class="toolbar-item"><a href="#">帮助中心</a></li>
+        </ul>
+	</div>	
+</div>
+
+<div class="header">
+	<div class="header-bd">
+		<div class="title">
+        	<h1>
+            	<a href="#">派宝箱</a>
+            </h1>
+        </div>
+        
+        <div class="pos">
+        	<em></em>
+            <span>会员中心</span>
+        </div>
+        
+        <div class="nav">
+        	<ul class="nav-ul clear">
+                <li class="nav-li"><a href="#" class="active">首页</a></li>
+                <li class="nav-li"><a href="#">快递员服务</a></li>
+                <li class="nav-li"><a href="#">管理员服务</a></li>
+                <li class="nav-li"><a href="#">用户服务</a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+<div class="content">
+	<div class="subnav">
+        <div class="subnav-bd clear">
+            <ul class="subnav-ul fl">
+                <li class="subnav-li"><a class="face active">首页</a></li>
+                <li class="subnav-li"><a class="setting">账户设置</a></li>
+            </ul>
+            <div class="action fr">
+                <span class="logout">安全退出</span>
+            </div>
+        </div>
+    </div>
+    
+      
+    <div class="content-bd">
+    	<div class="acc-set-wrap clear">
+        	<div class="sidebar">
+            	<div class="pic-view">
+                	<img src="images/defaultPic.png" width="96" height="96"/>
+                </div>
+            
+            	<ul class="menu-ul">
+                	<li class="menu-li">
+                    	<dl class="sub-menu-dl">
+                        	<dt>基本设置</dt>
+                        	<dd class="submenu-item"><a href="modifypic.html">修改头像</a></dd>
+                            <dd class="submenu-item"><a href="modifyownerinfo.html">个人信息</a></dd>
+                            <dd class="submenu-item"><a href="modifypassword.html">修改密码</a></dd>
+                        </dl>
+                    </li>
+                    <li class="menu-li">
+                    	<dl class="sub-menu-dl">
+                        	<dt>使用设置</dt>
+                        	<dd class="submenu-item"><a href="bansetting.html">禁止设定</a></dd>
+                            <dd class="submenu-item"><a href="processmode.html">处理方式</a></dd>
+                            <dd class="submenu-item"><a href="noticemode.html">通知方式设定</a></dd>
+                            <dd class="submenu-item active"><a href="smsmode.html">短信方式设定</a></dd>
+                            <dd class="submenu-item"><a href="timemode.html">允许投递时间</a></dd>
+                        </dl>
+                    </li>
+                    <li class="menu-li">
+                    	<dl class="sub-menu-dl">
+                        	<dt>寄件设置</dt>
+                        	<dd class="submenu-item"><a href="addersslist.html">寄件地址</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="section">
+            	<div class="section-bd">
+                	<div class="setting-wrap usesetting">
+                        <h4>使用设置</h4>
+                        <div class="setting-bd clear">
+                            <form action="" method="">
+								<h5 class="subtitle">短信发送设定</h5>
+                                <p class="form"><label><input class="formradio" type="radio" name="smsmode">只发本人</label></p>
+                                <p class="form"><label><input class="formradio" checked type="radio" name="smsmode">只发代领人</label></p>
+                                <p class="form"><label><input class="formradio" type="radio" name="smsmode">本人+代领人</label></p>
+                                <div class="smstips">
+                                	<p>温馨提示：</p>
+                                    <p>如您选择“本人+代领人”，系统将额外收取短信费用0.1元/条，请确保您的账户有足够余额。</p>
+                                </div>
+                                <button type="submit" class="save">保存</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+	<div class="footer-bd">
+		<div class="split"></div>
+        <div class="copyright clear">
+        	<ul class="link clear">
+            	<li class="item"><a href="#">法律声明</a></li>
+                <li class="item">|</li>
+                <li class="item"><a href="#">隐私保护</a></li>
+                <li class="item">|</li>
+                <li class="item"><a href="#">联系我们</a></li>
+                <li class="item">|</li>
+                <li class="item"><a href="#">网站地图</a></li>
+            </ul>
+            <div class="text">Copyright © 2013 深圳智和创新科技有限公司 版权所有 粤ICP13052456号</div>
+        </div>
+	</div>
+</div>
+</body>
+</html>

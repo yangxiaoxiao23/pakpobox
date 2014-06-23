@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {background:#f3f3f3;}
+
+/*layout*/
+.toolbar {height:26px;line-height:26px; background: url(../images/toolbar-bg.png) repeat-x;}
+.toolbar .toolbar-bd, .header .header-bd, .content .content-bd, .flowWrap-bd, .footer .footer-bd {width:1000px;margin:0 auto;}
+
+.header {height:75px;line-height:75px; background: #fff;}
+.header .title {float:left;}
+.header .pos {float:left;}
+.header .nav {float:right;}
+
+
+/*  工具栏样式 */
+.toolbar .toolbar-bd {height:26px;line-height:26px;}
+.toolbar .toolbar-bd .welcome, .toolbar .toolbar-bd .toolbar-bd-con li {float:left;color:#666;font-size:12px;font-family:'宋体';}
+.toolbar .toolbar-bd .toolbar-bd-con {float:right;height: 26px;line-height: 26px;}
+.toolbar .toolbar-bd .toolbar-bd-con li.toolbar-item {float:left;padding:0 5px;}
+.toolbar .toolbar-bd .toolbar-bd-con li a {float:left;color:#666;font-size:12px;font-family:'宋体';text-decoration:none;}
+.toolbar .toolbar-bd .toolbar-bd-con li a:hover{color:#ff6600;}
+
+.mypakpo .mypakpo-bd {height: 18px;line-height: 18px;margin:4px 0;}
+.mypakpo .mypakpo-bd a {padding:0 30px 0 10px;background:url(../images/icons.png) no-repeat 80px -190px;border-left:1px solid #e2e2e2;border-right:1px solid #e2e2e2;}
+.mypakpo .mypakpo-dl {display:none;padding:0 30px 0 10px;background:#fff; border:1px solid #e2e2e2;border-top:none;}
+.mypakpo .mypakpo-dd {height: 24px;line-height: 24px;}
+
+
+/* 头部样式 */
+.header .title {}
+.header .title h1 {margin:32px 0 0 14px;height:25px;line-height:25px;}
+.header .title h1 a {padding-left:125px;background:url(../images/logo.png) no-repeat left 3px;font-size:18px;font-family:'微软雅黑';font-weight:bold;color:#00a6b7;text-decoration:none;}
+
+.header .pos {margin:18px 0 0 0px;height:48px;line-height:48px;}
+.header .pos em {display:inline-block;width:1px;height:48px;background:url(../images/pos-split.png) no-repeat;margin:0 25px;}
+.header .pos span {font-size:18px;font-family:'微软雅黑';color:#767f82;vertical-align: top;}
+
+.header .nav {}
+.header .nav .nav-ul {margin-top:40px;}
+.header .nav .nav-ul .nav-li {float:left;padding:0 10px;height:24px;line-height:24px;}
+.header .nav .nav-ul .nav-li a {padding-left:20px;font-size:18px;font-family:'微软雅黑';color:#333;text-decoration:none;}
+.header .nav .nav-ul .nav-li a.active, .header .nav .nav-ul .nav-li a:hover{color:#ff6600; }
+.header .nav .nav-ul .nav-li a.active {background:url(../images/icons.png) no-repeat left 6px;}

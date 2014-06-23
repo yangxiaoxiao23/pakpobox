@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.content .subnav .subnav-bd, .content-bd .acc-set-wrap {width:1000px;margin:0 auto;}
+
+.content .subnav {height:44px;line-height:44px;padding-left:15px;background:#c8d1da;font:14px/1.5 '宋体'; color:#767f82;}
+.content .subnav .subnav-ul li, .content .subnav .action{height:44px;line-height:44px;}
+.content .subnav .subnav-ul li.subnav-li {float:left;padding:0 15px 0 15px;cursor:pointer;}
+.content .subnav .subnav-ul li.subnav-li a {padding:8px 20px;border-radius:3px;text-decoration:none;}
+.content .subnav .subnav-ul li.subnav-li .active, .content .subnav .subnav-ul li.subnav-li a:hover {background:#767f82;color:#fff;text-decoration:none;}
+.content .subnav .action {padding-right:40px;}
+.content .subnav .logout {background:#e0e5ea;color:#666666;padding:4px 6px;border-radius:3px;cursor:pointer;}
+.content .subnav .logout:hover {color:#f60;}
+
+.content-bd .acc-set-wrap {border:1px solid #cdcbcb;height:700px;margin:15px 0;}
+.acc-set-wrap .sidebar {float:left;width:136px;height:100%;border-right:1px solid #cdcbcb;background:#f5f5f5;}
+
+.acc-set-wrap .sidebar .pic-view {height:97px;width:97px;margin: 9px 23px 15px 13px;border:1px solid #cdcbcb;background:#fff;}
+.acc-set-wrap .sidebar .pic-view img {margin:1px 1px;}
+
+.sidebar .menu-ul {}
+.sidebar .menu-li {}
+.sidebar .menu-li .sub-menu-dl {}
+.sidebar .menu-li .sub-menu-dl dt {padding-left:24px;font:14px/27px '宋体'; color:#555555;height:27px;font-weight:bold;}
+.sidebar .menu-li .sub-menu-dl dd.submenu-item {font:12px/24px '宋体'; color:#555555;cursor:pointer;margin:1px 0;}
+.sidebar .menu-li .sub-menu-dl dd.submenu-item.active , .sidebar .menu-li .sub-menu-dl dd.submenu-item:hover {background-color:#e4e4e4;}
+.sidebar .menu-li .sub-menu-dl dd.submenu-item a {padding-left:36px;display:inline-block;_display:inline;_zoom:1;width:100%;color:#555555;text-decoration:none;background:url(../images/submenuitem.png) no-repeat 24px 10px;}
+
+
+.acc-set-wrap .section {float:left;background:#fff;width:861px;height:100%;}
+.acc-set-wrap .section .section-bd {margin:7px 23px 0 29px;}
+.section .section-bd .setting-wrap {}
+.section .section-bd .setting-wrap h4 {padding:14px 0 14px 5px;font:14px/14px '宋体'; color:#555555;border-bottom:2px solid #cdcbcb;}
+
+.section .section-bd .setting-wrap .setting-bd {margin-top:11px;padding-bottom:30px;}
+
+.section .section-bd .setting-bd table tr {height:36px;}
+.section .section-bd .setting-bd table input {color:#525252;height:20px;border:1px solid #cecece; box-shadow: inset 0 0 8px #f0f0f0;padding:2px 5px;}
+.section .section-bd .setting-bd table input.gender {height:26px;vertical-align: middle;}
+.section .section-bd .setting-bd table select {color:#525252;height:26px;border:1px solid #cecece; box-shadow: inset 0 0 8px #f0f0f0;padding:0 5px;}
+.section .section-bd .setting-bd table label {font-size:12px;font-family:'宋体';color:#333;padding-left:15px;}
+.section .section-bd .setting-bd table label em {color:red;float:left;}
+.section .section-bd .setting-bd p.split {border-bottom: 1px solid #dfdfdf;margin:10px 0;}
+.section .section-bd button.save {margin-top:17px;width:50px;height:22px;border-radius:2px;border:none;font:12px/12px '宋体'; color:#fff; background:url(../images/upload-save-bg.png) repeat-x;cursor:pointer;margin-left:100px;}
+
+/*修改头像*/
+.section .section-bd .modify-pic .setting-bd {border:1px solid #cdcbcb;}
+.section .section-bd .modify-pic .setting-bd .pic-view-wrap {float:left;width:363px;margin-left:35px;}
+.section .section-bd .modify-pic .setting-bd .pic-view-wrap p {padding:17px 0;font:12px/12px '宋体'; color:#555555;}
+.section .section-bd .modify-pic .setting-bd .pic-view-wrap .pic-view {height:97px;width:97px;margin: 4px 5px;border:1px solid #cdcbcb;background:#fff;}
+.section .section-bd .modify-pic .setting-bd .pic-view-wrap .pic-view img {margin:1px 1px;}
+
+.section .section-bd .modify-pic .setting-bd .pic-upload {float:left;}
+.section .section-bd .modify-pic .setting-bd .pic-upload .title {padding:24px 0;font:14px/14px '宋体'; color:#666666;}
+.section .section-bd .modify-pic .setting-bd .pic-upload .tips {padding:9px 0;font:12px/12px '宋体'; color:#898989;}
+.section .section-bd .modify-pic .setting-bd .pic-upload .btn {width:71px;height:21px;margin:7px 0;background: url(../images/uplaod-btn-bg.png) repeat-x;border-top:1px solid #e5e5e5;
+border-right:1px solid #dddddd;border-bottom:1px solid #c5c5c5;border-left:1px solid #dddddd;text-align:center;color:#7f7f7f; cursor:pointer;border-radius:2px;}
+.section .section-bd .modify-pic .setting-bd .pic-upload .preview {width:96px;height:96px;}
+
+.section .section-bd .modify-pic .setting-bd button.save {margin-left:0;}
+
+
+/*个人信息设置*/
+.section .section-bd .modify-owninfo .setting-bd table .birth-tips {padding-left:20px;font:12px/12px '宋体'; color:#999;}
+
+/* 使用设定 */
+.section .section-bd .usesetting .setting-bd {border:1px solid #cdcbcb;padding:10px 0 30px 25px;}
+.section .section-bd .usesetting .setting-bd h5.subtitle {font:12px/31px '宋体'; color:#555555;font-weight:bold;}
+.section .section-bd .usesetting .setting-bd p.form {font:12px/31px '宋体'; color:#333;}
+.section .section-bd .usesetting .setting-bd p.form input.formradio {margin-right:10px;vertical-align:middle;} 
+.section .section-bd .usesetting .setting-bd p.form input[type=text] {color:#525252;height:20px;border:1px solid #cecece; box-shadow: inset 0 0 8px #f0f0f0;padding:2px 5px;}
+
+
+.section .section-bd .usesetting .setting-bd button.save {margin-left:24px;}
+
+.section .section-bd .usesetting .setting-bd p.form input.formno {margin-left:20px;}
+.section .section-bd .usesetting .setting-bd p.form .mobilephone-text {padding-left:24px;}
+.section .section-bd .usesetting .setting-bd p.form input.email {margin-left:20px;}
+.section .section-bd .usesetting .setting-bd p.form span.date {margin:0 10px;}
+
+.section .section-bd .usesetting .setting-bd .smstips {width:590px;border:1px solid #ffd4ad;background:#ffe0aa;padding:7px 13px;}
+.section .section-bd .usesetting .setting-bd .smstips p {color:#7e7e7e;font:12px/12px '宋体';padding:4px;}
+
+/*地址管理*/
+.section .section-bd .addresslist .setting-bd  table {width:100%;}
+.section .section-bd .addresslist .setting-bd  table caption {padding-bottom:10px;font-weight:normal;text-align:left;font:12px/12px '宋体'; color:#999;}
+.section .section-bd .addresslist .setting-bd .status {color:#fc6210;font:12px/12px '宋体';}
+.section .section-bd .addresslist .setting-bd .addresstips {font-size:12px;font-family:'宋体';color:#333;}
+.section .section-bd .addresslist textarea {padding:0 5px;}
+.section .section-bd .addresslist input.defaultaddress {vertical-align:middle;margin-right:10px;}
+
+.section .section-bd .addresslist .setting-bd button.save {margin-left:0;}
+
+
+#addressitems table {border: 1px solid #a2cbff;margin-top:50px;text-align:center;font:12px/1.8 '宋体'; color:#404040;}
+#addressitems table caption {text-align:left;font:12px/12px '宋体'; color:#fc6210;}
+#addressitems table thead {}
+#addressitems table thead tr {height:29px;background: url(../images/th-bg.png) repeat-x;}
+#addressitems table thead th{font-weight:normal; }
+#addressitems table tbody tr {border:1px solid #a2cbff;}
+#addressitems table tbody tr td a {color:#404040;text-decoration:none;}
+#addressitems table tbody tr td a:hover {color:#fc6210;text-decoration:none;}
+#addressitems table tbody tr:hover {background:#c6d9f0;}
+#addressitems table tbody tr:hover .default {display:inline;cursor:pointer;}
+#addressitems table tbody tr.default-addr:hover .default {display:none;}
+#addressitems table tbody tr.default-addr {background:#c6d9f0;}
+#addressitems table tbody .default {display:none;color:#0000ff;}
+#addressitems table tbody tr.default-addr .default {display:inline;cursor:pointer;}
+
+#addressitems p.more-address {font:12px/2 '宋体'; color:#404040;}

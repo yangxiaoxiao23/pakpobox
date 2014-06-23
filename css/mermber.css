@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content {}
+
+
+.content .subnav .subnav-bd, .content .userinfo-account-bd, .content .content-bd {width:1000px;margin:0 auto;}
+
+.content .subnav {height:44px;line-height:44px;padding-left:15px;background:#c8d1da;font:14px/1.5 '宋体'; color:#767f82;}
+.content .subnav .subnav-ul li, .content .subnav .action{height:44px;line-height:44px;}
+.content .subnav .subnav-ul li.subnav-li {float:left;padding:0 15px 0 15px;cursor:pointer;}
+.content .subnav .subnav-ul li.subnav-li a {padding:8px 20px;border-radius:3px;text-decoration:none;}
+.content .subnav .subnav-ul li.subnav-li .active, .content .subnav .subnav-ul li.subnav-li a:hover {background:#767f82;color:#fff;text-decoration:none;}
+.content .subnav .action {padding-right:40px;}
+.content .subnav .logout {background:#e0e5ea;color:#666666;padding:4px 6px;border-radius:3px;cursor:pointer;}
+.content .subnav .logout:hover {color:#f60;}
+
+.content .userinfo-account {background:url(../images/account-bg.png) no-repeat;}
+.content .userinfo {height:120px;line-height:120px; }
+.userinfo .userinfo-bd {height:85px;padding:20px 0 15px 35px;}
+.userinfo .userinfo-bd .picL {height:84px;background:url(../images/picL.png) no-repeat left center;}
+.userinfo .userinfo-bd .picR {height:84px;background:url(../images/picR.png) no-repeat right center;}
+.userinfo .userinfo-bd .picCenter {width:84px;height:84px; background:url(../images/defaultPic.png) no-repeat;}
+
+.userinfo .userinfo-bd .wel {height:26px;line-height:26px;padding-left:45px;}
+.userinfo-bd  .wel span {font:18px/1.5 '微软雅黑';color:#fff;}
+.userinfo-bd  .split { background:url(../images/user-split.png) no-repeat center center;height:30px;}
+
+.userinfo-bd  .user {padding-left:40px;}
+.userinfo-bd  .user p {font:14px/1.5 '宋体';color:#fff;}
+.userinfo-bd  .user em {padding-right:30px;}
+
+
+.userinfo .account {height:90px;line-height:90px;background:url(../images/blance-bg.png) repeat-x;border-radius:2px;margin:13px 0 17px;}
+.userinfo .account .balance {height:70px;padding:10px 25px;}
+
+.userinfo .account .balance p.attr {height:30px;line-height:30px;}
+.userinfo .account .balance p.attr label{font:14px/1.5 '宋体';color:#565a5b;}
+
+.userinfo .account .balance p.value {height:40px;line-height:40px;color:#565a5b;font:14px/1.5 '宋体';}
+.userinfo .account .balance p.value em {font:30px/1.5  Arial, Helvetica, sans-serif;}
+.userinfo .account .balance p.value i {font:18px/1.5   Arial, Helvetica, sans-serif;}
+
+.userinfo .account .recharge {padding:13px 42px; background:url(../images/recharge.png) repeat-x;border-radius:2px;cursor:pointer;font:14px/1.5 '宋体';color:#fff;}
+
+.userinfo .account .recharge:hover {background:url(../images/re-recharge.png) repeat-x;}
+
+.userinfo .account .see-detail {font:12px/1.5 '宋体';color:#565a5b;cursor:pointer;padding:0 20px;text-decoration:none;}
+.userinfo .account .see-detail:hover {color:#f60;text-decoration:none;}
+
+
+.content .content-bd {width:1000px;}
+
+.content-bd .message-wrap {}
+.content-bd .message-wrap table {width:100%;margin-top:10px;font:14px/1.5 '宋体';}
+.content-bd .message-wrap table caption {padding-left:20px;text-align:start;height:35px;line-height:35px;background:#f5f5f5;border: 1px solid #cccccc;border-bottom:none;color:#00a6b7;font-weight:bold;}
+
+.content-bd .message-wrap table tr {height:40px;line-height:40px;border: 1px solid #cccccc;background:#ffffff;}
+
+.content-bd .message-wrap table tr td.label {padding-left:20px;font-weight:bold;}
+.content-bd .message-wrap table tr .indend {padding-left:20px;}
+.content-bd .message-wrap table tr.status {font-weight:bold; text-align:left;}
+.content-bd .message-wrap table tr td {color:#626262; white-space:nowrap; overflow:hidden;}
+.content-bd .message-wrap table tr td.action .update {border:1px solid #cdcbcb; background:url(../images/td-update-bg.png) repeat-x;color:#585a59;padding:4px 15px;text-decoration:none;}
+.content-bd .message-wrap table tr td.action .update:hover {background:url(../images/re-td-update-bg.png) repeat-x;text-decoration:none;color:#f60;}
+
+#package-record caption em {color:#0289cb;font-weight:normal;padding:0 15px;}
+#package-record caption select {padding:0 5px;margin:0 15px;height:21px;border:1px solid #a9a9a9;color:#626262;}
+#package-record caption input#range-sear {width:49px;height:24px;color:#fff;background:url(../images/search-bg.png) no-repeat;border:none;cursor:pointer;}
+#package-record .arrow-left { background:url(../images/icons.png) no-repeat 20px -266px; padding-left:50px;}
+#package-record .arrow-right { background:url(../images/icons.png) no-repeat 20px -232px;padding-left:50px;}
+table#package-record tr td.right {color:#14bd0c;}
+table#package-record tr td.error {color:#e40e0e;}
+
+
+.content-bd .adv {border:1px solid #cdcbcc;margin:20px 0 13px;}
+
+

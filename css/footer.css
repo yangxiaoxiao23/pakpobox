@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+.flowWrap-bd, .footer .footer-bd {width:1000px;margin:0 auto;}
+.footer {background:#f3f3f3;}
+.footer .footer-split {height:8px;overflow:hidden;background:url(../images/footer-bg.png) repeat-x;}
+.footer .footer-bd .split {height:0;overflow:hidden;border-bottom:1px solid #e5e5e5;border-top:1px solid #f9f9f9;}
+
+/* 页面底部  */
+.footer .footer-bd .mall-desc {padding:7px 25px 30px 25px; font-size:12px;font-family:'宋体';}
+.footer .footer-bd .weixin {float:right;padding:0 25px 12px 20px;}
+.footer .footer-bd .mall-ul {float:left;width:780px;}
+.footer .footer-bd .mall-ul .mall-list {float:left;width:16%;padding: 0 2px;}
+.footer .footer-bd .mall-ul .mall-list .mall-dl {}
+.footer .footer-bd .mall-ul .mall-list .mall-dl dt {padding:10px 0;color:#cf5b28;font-weight:bold;}
+.footer .footer-bd .mall-ul .mall-list .mall-dd {width:100%;padding:2px 0; white-space: nowrap;text-overflow:ellipsis; overflow:hidden;}
+.footer .footer-bd .mall-ul .mall-list .mall-dd a {color:#545454;text-decoration:none;}
+.footer .footer-bd .mall-ul .mall-list .mall-dd a:hover {color:#ff6600;text-decoration:none;}
+
+.footer .footer-bd .copyright {margin:0 25px; font-size:12px;font-family:'宋体';color:#989898;}
+.footer .footer-bd .copyright .link {float:left;}
+.footer .footer-bd .copyright .link .item {float:left;padding:10px 5px;}
+.footer .footer-bd .copyright .link .item a {color:#989898;}
+.footer .footer-bd .copyright .link .item a:hover {color:#ff6600;}
+.footer .footer-bd .text {float:right;padding:10px 5px;font:12px/1.5 "Lucida Grande",tahoma,arial,\5b8b\4f53;}

@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content {height:340px;overflow:hidden;}
+.content .content-bd {width:1000px;margin:0 auto;}
+
+.content .loginWrap {height:340px;}
+
+/* 页面主体 */
+.content .slide-ul {height:340px;width:100%;overflow:hidden;position:relative;}
+.content .slide-ul .slide-li {height:100%;width:100%;position:absolute;top:0;left:0;}
+.content .slide-ul .slide-li.one {background:url(../images/slide/pic1.png) no-repeat  center center;}
+.content .slide-ul .slide-li.two {background:url(../images/slide/pic2.png) no-repeat  center center;}
+.content .slide-ul .slide-li.three {background:url(../images/slide/pic3.png) no-repeat  center center;}
+
+.content .content-bd {position:relative;top:-340px;}
+.content .loginWrap .experience {float:left;}
+.content .loginWrap .experience a {display:inline-block;_display:inline;_zoom:1;font:18px/1.5 '黑体';padding:0 60px 0 25px;color:#a4411d;border:none;background:#fff url(../images/icons.png) no-repeat 120px -50px;margin:175px 0 0 30px;text-decoration:none; cursor:pointer;}
+
+.content .loginWrap .login-bd {float:right;width:285px;height:295px;background:#7c3918;margin-top:23px;}
+.content .loginWrap .login-bd #loginForm {padding:0 33px;}
+.content .loginWrap .login-bd #loginForm .title {font:18px/1.5 '微软雅黑';height:53px;line-height:53px;color:#fff;}
+#loginForm .username-wrap,  #loginForm .password-wrap {height:40px;padding-left:40px;background:#aaabab url(../images/icons.png) no-repeat 8px -92px;margin-bottom:20px;}
+#loginForm .password-wrap  { background-position:8px -134px;}
+#loginForm .username-wrap input, #loginForm .password-wrap input {height:40px;border:none;width:100%;padding-left:5px; }
+
+#loginForm .forget-password {text-align:right;padding-bottom:20px;}
+#loginForm .forget-password a {color:#999999;}
+#loginForm .login-action { background:url(../images/login-btn-bg.png) repeat-x;height:40px; line-height:40px;text-align:center;}
+#loginForm .login-action:hover{ background:#ffa800;}
+#loginForm .login-action input {background:none;border:none;color:#fff;font-size:16px;}
+#loginForm .account-action {height:50px;line-height:50px;text-align:center;}
+#loginForm .account-action a {padding:0 15px;}
+#loginForm .account-action a.activate {color:#999;}
+#loginForm .account-action a.res {color:#ea7819;}
+
+.content .slide-flag {position: relative;top: -20px;text-align: center;}
+.content .slide-flag span {display:inline-block;_display:inline;_zoom:1;width:12px;height:20px;margin:0 5px;background:url(../images/icons.png) no-repeat right -110px;cursor:pointer;}
+.content .slide-flag span.active { background-position: -74px -110px;}
+
+.flowWrap {height:224px; background:#fff;}
+.flowWrap .flowWrap-ul {height:100%;}
+.flowWrap .flowWrap-ul .flowWrap-li {float:left;width:25%;}
+.flowWrap .flowWrap-ul .flowWrap-li .pic {height:116px;}
+.flowWrap .flowWrap-ul .flowWrap-li .pic.one {background:url(../images/flow/pic1.png) no-repeat 30px 25px;}
+.flowWrap .flowWrap-ul .flowWrap-li .pic.two {background:url(../images/flow/pic2.png) no-repeat 30px 43px;}
+.flowWrap .flowWrap-ul .flowWrap-li .pic.three {background:url(../images/flow/pic3.png) no-repeat 30px 36px;}
+.flowWrap .flowWrap-ul .flowWrap-li .pic.four {background:url(../images/flow/pic4.png) no-repeat 30px 32px;}
+.flowWrap .flowWrap-ul .flowWrap-li .no {height:23px;line-height:23px;padding-left:30px;}
+.flowWrap .flowWrap-ul .flowWrap-li .no span {display:inline-block;_display:inline;_zoom:1;width:49px;font-size:18px;font-family:Impact;color:#fff;background: url(../images/icons.png) no-repeat left -20px;padding-left:18px;}
+
+.flowWrap .flowWrap-ul .flowWrap-li .text {width:160px;padding-left:30px;padding-top:13px;height:25px;line-height:25px;}
+.flowWrap .flowWrap-ul .flowWrap-li .text span {font-size:12px;font-family:'宋体';color:#626262;}

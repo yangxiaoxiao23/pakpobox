@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>派宝箱PakpoBox</title>
+<link type="text/css" rel="stylesheet" href="css/public_reset.css">
+<link type="text/css" rel="stylesheet" href="css/header.css">
+<link type="text/css" rel="stylesheet" href="css/footer.css">
+<link type="text/css" rel="stylesheet" href="css/account.css">
+<link rel="stylesheet" href="css/validationEngine.jquery.css">
+
+<!--引入Jq-->
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+ 
+<script src="js/jquery.validationEngine-zh_CN.js"></script> 
+<script src="js/jquery.validationEngine.min.js"></script> 
+
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+	DD_belatedPNG.fix(".pngFix,.pngFix:hover");
+}
+</script>
+<![endif]-->
+
+<script type="text/javascript">
+$(function(){
+	$("#addressform").validationEngine();
+});
+</script>
+</head>
+
+<body>
+<div class="toolbar">
+	<div class="toolbar-bd clear">
+		<div class="welcome">欢迎使用派宝箱！</div>	
+    	<ul class="toolbar-bd-con clear">
+        	<li class="toolbar-item">你好，苍老师</li>
+            <li class="toolbar-item mypakpo">
+            	<div class="mypakpo-bd">
+                	<a href="#">我的派宝箱</a>
+                </div>    
+                <dl class="mypakpo-dl">
+                	<dd class="mypakpo-dd"><a href="#">充值1</a></dd>
+                    <dd class="mypakpo-dd"><a href="#">充值2</a></dd>
+                    <dd class="mypakpo-dd"><a href="#">充值3</a></dd>
+                </dl>
+            </li>
+            <li class="toolbar-item"><a href="#">帮助中心</a></li>
+        </ul>
+	</div>	
+</div>
+
+<div class="header">
+	<div class="header-bd">
+		<div class="title">
+        	<h1>
+            	<a href="#">派宝箱</a>
+            </h1>
+        </div>
+        
+        <div class="pos">
+        	<em></em>
+            <span>会员中心</span>
+        </div>
+        
+        <div class="nav">
+        	<ul class="nav-ul clear">
+                <li class="nav-li"><a href="#" class="active">首页</a></li>
+                <li class="nav-li"><a href="#">快递员服务</a></li>
+                <li class="nav-li"><a href="#">管理员服务</a></li>
+                <li class="nav-li"><a href="#">用户服务</a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+<div class="content">
+	<div class="subnav">
+        <div class="subnav-bd clear">
+            <ul class="subnav-ul fl">
+                <li class="subnav-li"><a class="face active">首页</a></li>
+                <li class="subnav-li"><a class="setting">账户设置</a></li>
+            </ul>
+            <div class="action fr">
+                <span class="logout">安全退出</span>
+            </div>
+        </div>
+    </div>
+    
+      
+    <div class="content-bd">
+    	<div class="acc-set-wrap clear">
+        	<div class="sidebar">
+            	<div class="pic-view">
+                	<img src="images/defaultPic.png" width="96" height="96"/>
+                </div>
+            
+            	<ul class="menu-ul">
+                	<li class="menu-li">
+                    	<dl class="sub-menu-dl">
+                        	<dt>基本设置</dt>
+                        	<dd class="submenu-item"><a href="modifypic.html">修改头像</a></dd>
+                            <dd class="submenu-item"><a href="modifyownerinfo.html">个人信息</a></dd>
+                            <dd class="submenu-item"><a href="modifypassword.html">修改密码</a></dd>
+                        </dl>
+                    </li>
+                    <li class="menu-li">
+                    	<dl class="sub-menu-dl">
+                        	<dt>使用设置</dt>
+                        	<dd class="submenu-item"><a href="bansetting.html">禁止设定</a></dd>
+                            <dd class="submenu-item"><a href="processmode.html">处理方式</a></dd>
+                            <dd class="submenu-item"><a href="noticemode.html">通知方式设定</a></dd>
+                            <dd class="submenu-item"><a href="smsmode.html">短信方式设定</a></dd>
+                            <dd class="submenu-item"><a href="timemode.html">允许投递时间</a></dd>
+                        </dl>
+                    </li>
+                    <li class="menu-li">
+                    	<dl class="sub-menu-dl">
+                        	<dt>寄件设置</dt>
+                        	<dd class="submenu-item active"><a href="addersslist.html">寄件地址</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="section">
+            	<div class="section-bd">
+                	<div class="setting-wrap addresslist">
+                        <h4>地址管理</h4>
+                        <div class="setting-bd clear">
+                            <form action="" method="" id="addressform">
+                                <table>
+                                    <caption>添加地址后，系统将同步到派宝箱终端。您需要寄件时，可在终端上直接选择下面添加的地址，而无须现场手动输入，节约您的时间。</caption>
+                                    <tbody>
+                                        <tr>
+                                            <td width="100" class="status">新增收货地址</td>
+                                            <td class="addresstips">电话号码、手机号选填一项，其余均为必填项</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right"><label>所在地区：<em>*</em></label></td>
+                                            <td>
+                                            	<select name="province" class="validate[required]">
+                                                    <option value>请选择省市/其他</option>
+                                                    <option value="GD">广东</option>
+                                                </select>
+                                                <select name="city" class="validate[required]">
+                                                    <option value>请选择城市</option>
+                                                    <option value="SZ">深圳市</option>
+                                                </select>
+                                                <select name="district " class="validate[required]">
+                                                    <option value>请选择区/县</option>
+                                                    <option value="NS">南山区</option>
+                                                </select>
+                                                <select name="district ">
+                                                    <option value>请选择</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right"><label><em>*</em>邮政编码：</label></td>
+                                            <td><input type="text" name="text"  class="validate[required]"></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" align="right"><label><em>*</em>街道地址：</label></td>
+                                            <td>
+                                            	<textarea class="validate[required]" placeholder="不需要重复填写省市区，必须大于5个字符，小于120个字符" rows="3" cols="100"></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right"><label><em>*</em>收货人姓名：</label></td>
+                                            <td><input type="text" name="receivename"  class="validate[required, maxSize[25]]" placeholder="长度不超过25个字"></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td align="right"><label>手机号码：</label></td>
+                                            <td><input type="text" name="mobilephone" placeholder="电话号码、手机号码必填一项"></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td align="right"><label>电话号码：</label></td>
+                                            <td><input type="text" name="areano" placeholder="区号" >  -  <input type="text" name="phone"  placeholder="电话号码" > - <input type="text" name="extension"  placeholder="分机号" ></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td align="right"><label>设为默认地址：</label></td>
+                                            <td><label><input class="defaultaddress" type="checkbox" name="defaultaddress" >设为默认收货地址</label></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td></td>
+                                            <td><button type="submit" class="save">保存</button></td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </form>
+                            
+                            <div id="addressitems">
+                            	<table>
+                                	<caption>已保存的有效地址</caption>
+                                    <thead>
+                                    	<tr>
+                                        	<th width="85">收货人</th>
+                                            <th width="170">所在地区</th>
+                                            <th>街道地址</th>
+                                            <th width="55">邮编</th>
+                                            <th width="140">电话/手机</th>
+                                            <th width="65"></th>
+                                            <th width="85">操作</th>
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody>
+                                    	<tr>
+                                        	<td>张三</td>
+                                            <td>广东省深圳市南山区</td>
+                                            <td>xxxxx街道xxxxxxxxx大厦xxx号xxxxx</td>
+                                            <td>124121</td>
+                                            <td>0481-41124511-12<br/>18545214540</td>
+                                            <td><i class="default">默认地址</i></td>
+                                            <td><a href="">修改</a> | <a href="">删除</a></td>
+                                        </tr>
+                                        <tr class="default-addr">
+                                        	<td>张三</td>
+                                            <td>广东省深圳市南山区</td>
+                                            <td>xxxxx街道xxxxxxxxx大厦xxx号xxxxx</td>
+                                            <td>124121</td>
+                                            <td>0481-41124511-12<br/>18545214540</td>
+                                            <td><i class="default">默认地址</i></td>
+                                            <td><a href="">修改</a> | <a href="">删除</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="more-address">最多保存20个有效地址</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+	<div class="footer-bd">
+		<div class="split"></div>
+        <div class="copyright clear">
+        	<ul class="link clear">
+            	<li class="item"><a href="#">法律声明</a></li>
+                <li class="item">|</li>
+                <li class="item"><a href="#">隐私保护</a></li>
+                <li class="item">|</li>
+                <li class="item"><a href="#">联系我们</a></li>
+                <li class="item">|</li>
+                <li class="item"><a href="#">网站地图</a></li>
+            </ul>
+            <div class="text">Copyright © 2013 深圳智和创新科技有限公司 版权所有 粤ICP13052456号</div>
+        </div>
+	</div>
+</div>
+</body>
+</html>
