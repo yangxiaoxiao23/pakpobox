@@ -29,10 +29,10 @@ $(function(){
 		
 		var swfu;
 		
-		var uploadCompleteFun = function(){
+		var uploadCompleteFun = function(){ //上传完成的事件
 		};
 		
-		var uploadSuccessFun = function(option, result,status){
+		var uploadSuccessFun = function(option, result,status){ //上传成功事件
 		};
 		
 	 var settings_object = {//定义参数配置对象
@@ -41,9 +41,9 @@ $(function(){
 		button_placeholder_id: 'upload-btn',
 		button_width : 84,
 		button_height : 22,
-		button_text:'上传图片',
+		button_text:'<span class="btn-style">上传图片</span>',
 		button_text_top_padding: 4,
-		button_text_left_padding: 18,
+		button_text_left_padding: 10,
 		button_text_style: '.btn-style{color:#ED5C00;}',
 		button_cursor : SWFUpload.CURSOR.HAND,
 		button_window_mode : SWFUpload.WINDOW_MODE.TRANSPARENT,
@@ -51,20 +51,20 @@ $(function(){
 		file_types : "*.jpg;*.gif;*.png;*.bmp;",
 		upload_success_handler : uploadSuccessFun,
 		upload_complete_handler : uploadCompleteFun,
-		upload_error_handler: function(){
+		upload_error_handler: function(){ //上传错误的时间
 			
 		},
-		upload_progress_handler: function(fileInfo, uploadSize, fileSize){
-		},
-		
-		file_dialog_start_handler: function(){
+		upload_progress_handler: function(fileInfo, uploadSize, fileSize){ //进度条事件
 			
 		},
 		
-		file_dialog_complete_handler: function(){
+		file_dialog_start_handler: function(){ //文件选择框弹出的事件
+		},
+		
+		file_dialog_complete_handler: function(){ //文件选择框中选取文件后的事件
 			swfu.startUpload();
 		},
-		file_queue_error_handler: function(option, codeError, errmsg){
+		file_queue_error_handler: function(option, codeError, errmsg){ //上传队列错误的事件
 			if(codeError == -130){
 				alert('文件类型不支持');
 			}
@@ -115,10 +115,10 @@ $(function(){
         
         <div class="nav">
         	<ul class="nav-ul clear">
-                <li class="nav-li"><a href="#" class="active">首页</a></li>
-                <li class="nav-li"><a href="#">快递员服务</a></li>
-                <li class="nav-li"><a href="#">管理员服务</a></li>
-                <li class="nav-li"><a href="#">用户服务</a></li>
+                <li class="nav-li"><a href="#" class="active pngFix">首页</a></li>
+                <li class="nav-li"><a href="#" class="pngFix">快递员服务</a></li>
+                <li class="nav-li"><a href="#" class="pngFix">管理员服务</a></li>
+                <li class="nav-li"><a href="#" class="pngFix">用户服务</a></li>
             </ul>
         </div>
 	</div>

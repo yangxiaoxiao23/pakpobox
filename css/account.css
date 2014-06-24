@@ -25,7 +25,7 @@
 .sidebar .menu-li .sub-menu-dl dt {padding-left:24px;font:14px/27px '宋体'; color:#555555;height:27px;font-weight:bold;}
 .sidebar .menu-li .sub-menu-dl dd.submenu-item {font:12px/24px '宋体'; color:#555555;cursor:pointer;margin:1px 0;}
 .sidebar .menu-li .sub-menu-dl dd.submenu-item.active , .sidebar .menu-li .sub-menu-dl dd.submenu-item:hover {background-color:#e4e4e4;}
-.sidebar .menu-li .sub-menu-dl dd.submenu-item a {padding-left:36px;display:inline-block;_display:inline;_zoom:1;width:100%;color:#555555;text-decoration:none;background:url(../images/submenuitem.png) no-repeat 24px 10px;}
+.sidebar .menu-li .sub-menu-dl dd.submenu-item a {padding-left:36px;display:block;color:#555555;text-decoration:none;background:url(../images/submenuitem.png) no-repeat 24px 10px;}
 
 
 .acc-set-wrap .section {float:left;background:#fff;width:861px;height:100%;}

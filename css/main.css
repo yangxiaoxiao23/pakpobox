@@ -28,7 +28,7 @@
 #loginForm .forget-password a {color:#999999;}
 #loginForm .login-action { background:url(../images/login-btn-bg.png) repeat-x;height:40px; line-height:40px;text-align:center;}
 #loginForm .login-action:hover{ background:#ffa800;}
-#loginForm .login-action input {background:none;border:none;color:#fff;font-size:16px;}
+#loginForm .login-action input {background:none;border:none;color:#fff;font-size:16px;cursor:pointer;}
 #loginForm .account-action {height:50px;line-height:50px;text-align:center;}
 #loginForm .account-action a {padding:0 15px;}
 #loginForm .account-action a.activate {color:#999;}
